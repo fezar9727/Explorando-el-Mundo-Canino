@@ -10,7 +10,6 @@
     <!-- ================ zona de navegación (inicio) ================-->
     <header id="inicio">
         <h1>Explorando el Mundo Canino</h1>
-        <hr>
         <nav aria-label="Navegación principal">
             <ul>
                 <li><a href="#datos">Datos Curiosos</a></li>
@@ -24,7 +23,24 @@
             Plataforma técnica orientada a la divulgación de <b>biología, etología y protocolos de bienestar canino</b>. 
             Este recurso centraliza <b>evidencia científica</b> para la optimización de la salud y el estudio del comportamiento de los canes.
         </p>
-        <hr>
+
+        <!-- ================ zona de buscador, se implementaran cambios a futuro en javascriptpara que funcione ================-->
+        <section id="buscador">
+            <label for="busqueda-mascota">Busca por tamaño o raza:</label>
+            <input list="razas-opciones" id="busqueda-mascota" placeholder="Ej: Beagle o Medianas...">
+            
+            <datalist id="razas-opciones">
+                <option value="Razas Pequeñas">
+                <option value="Razas Medianas">
+                <option value="Razas Grandes">
+                <option value="Pug (Pequeña)">
+                <option value="Beagle (Mediana)">
+                <option value="Labrador (Grande)">
+            </datalist>
+
+            <button type="button">Ir a la ficha</button>
+        </section>
+
     </header>
 
     
@@ -112,18 +128,17 @@
                     <p><strong>Dato extra:</strong> El <em>Border Collie</em> es considerado la raza más inteligente del mundo, capaz de identificar cientos de objetos distintos.</p>
                 </aside>
             </article>
-            <hr>
         </section>
 
         <!-- ================ seccion cuidados ================-->
         <section id="cuidados">
             <h2>Guía de Cuidado y Bienestar Integral</h2>
             <p>Recomendaciones técnicas basadas en las necesidades fisiológicas y comportamentales según el tamaño y morfología de cada ejemplar.</p>
-            <hr>
+
             <article id="pequeñas">
                 <h3>Razas Pequeñas (Pug, Chihuahua, Yorkshire, etc.)</h3>
                 <figure>
-                    <img src="image/perro-pequeno.webp" alt="Perro de raza pequeña descansando"/>
+                    <img src="image/razas-pequenas-de-perros.webp" alt="Perros de raza pequeña descanzando en el sofa"/>
                     <figcaption>Las razas pequeñas requieren una gestión específica de su energía y salud estructural.</figcaption>
                 </figure>
 
@@ -154,12 +169,11 @@
                 <p><a href="razas/01-razas-pequenas.html">Ver catálogo completo de razas pequeñas...</a></p>
             </article>
 
-            <hr>
 
             <article id="medianas">
                 <h3>Razas Medianas (Beagle, Bulldog, Border Collie, etc.)</h3>
                 <figure>
-                    <img src="image/perro-mediano.webp" alt="Perro mediano jugando"/>
+                    <img src="image/perros-de-raza-mediana.webp" alt="Perros medianos al air libre"/>
                     <figcaption>Equilibrio entre capacidad atlética y necesidades cognitivas.</figcaption>
                 </figure>
 
@@ -190,12 +204,11 @@
                 <p><a href="razas/02-razas-medianas.html">Ver catálogo completo de razas medianas...</a></p>
             </article>
 
-            <hr>
 
             <article id="grandes">
                 <h3>Razas Grandes (Labrador, Gran Danés, Husky, etc.)</h3>
                 <figure>
-                    <img src="image/perro-grande.webp" alt="Perro grande en el campo"/>
+                    <img src="image/razas-de-perros-grandes.jpg" alt="varios perros de raza grande"/>
                     <figcaption>Gestión del desarrollo músculo-esquelético y salud digestiva.</figcaption>
                 </figure>
 
@@ -226,11 +239,9 @@
                 
                 <p><a href="razas/03-razas-grandes.html">Ver catálogo completo de razas grandes...</a></p>
             </article>
-            <hr>
         </section>
 
 
-        <!-- ================ ACA NOS TOCA BUSCAR LAS IMAGENES VIDEOS Y GIFS CORRESPONDIENTES ================-->
         <!-- ================ seccion multimedia ================-->
         <section id="multimedia">
             <h2>Recursos Visuales y Auditivos</h2>
@@ -247,7 +258,7 @@
                 </p>
                 
                 <figure>
-                    <img src="image/perro-hermoso.webp" alt="Perro manteniendo contacto visual directo"/>
+                    <img src="image/perro-contacto-visual-directo.webp" alt="Perro manteniendo contacto visual directo"/>
                     <figcaption>
                         El <b>contacto visual directo</b>: En contextos positivos, refuerza el <em>vínculo afectivo</em> mediante la liberación de oxitocina. 
                         Sin embargo, una mirada fija y rígida puede ser una señal de <b>desafío jerárquico</b> o una advertencia previa a un comportamiento defensivo.
@@ -255,7 +266,7 @@
                 </figure>
 
                 <figure>
-                    <img src="image/sumision.webp" alt="Perro con postura corporal baja y orejas hacia atrás"/>
+                    <img src="image/perro-sumiso-y-orejas-para-atras.jpg" alt="Perro con postura corporal baja y orejas hacia atrás"/>
                     <figcaption>
                         Lenguaje de <b>sumisión o relajación</b>: La postura corporal baja y las orejas hacia atrás indican que el perro intenta proyectar
                         un <b>menor volumen físico</b> para transmitir calma. Es una conducta de <em>apaciguamiento</em> común en contextos de socialización saludable.
@@ -263,7 +274,7 @@
                 </figure>
 
                 <figure>
-                    <img src="image/estres.webp" alt="Perro mostrando la esclera del ojo, conocido como ojo de ballena"/>
+                    <img src="image/perro-y-el-ojo-de-ballena.webp" alt="Perro mostrando la esclera del ojo, conocido como ojo de ballena"/>
                     <figcaption>
                         Señales de <b>estrés o advertencia</b>: El <em>ojo de ballena</em> (mostrar la parte blanca del ojo) suele ir acompañado de rigidez muscular. 
                         Es una señal crítica de <b>incomodidad aguda</b>; ignorar esta advertencia aumenta drásticamente el riesgo de una respuesta reactiva por parte del can.
@@ -303,7 +314,7 @@
 
                 <figure>
                     <audio controls>
-                        <source src="audio/gruñido-de-advertencia.mp3" type="audio/mp3">
+                        <source src="audio/sonido-de-advertencia.mp3" type="audio/mp3">
                         Tu navegador no soporta el elemento de audio.
                     </audio>
                     <figcaption>
@@ -385,13 +396,11 @@
             </p>
         </section>
 
-        <hr>
-
         <nav aria-label="Navegación de retorno">
             <ul>
                 <li><a href="#inicio">Volver al Inicio</a></li>
             </ul>
-        </nav>
+        </nav> 
 
         <p>
             <small>&copy; 2026 Guía Global de Bienestar Canino. Contenido recopilado con fines informativos para la comunidad.</small>
